@@ -94,5 +94,8 @@
     "*.{ts,json}": [
       "npm run format"
     ]
+  },
+  "publishConfig": {
+    "@ambikarajaram:registry": "https://npm.pkg.github.com"
   }
 }
