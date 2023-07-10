@@ -20,7 +20,7 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: productapi_token  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
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
 # name: Create and publish a Docker image
 
