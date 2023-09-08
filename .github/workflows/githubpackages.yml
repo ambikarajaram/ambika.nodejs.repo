@@ -9,7 +9,7 @@ on:
   schedule:
     - cron: "*/2 * * * *"
   workflow_run:
-    workflows: 'Run tests on branch'
+    workflows: "Run tests on branch"
     types: schedule
     branches: testingCron
     
