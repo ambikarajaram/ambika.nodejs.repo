@@ -7,9 +7,14 @@ name:
 on:
   # Triggers the workflow every 5 minutes
   schedule:
-    - cron: "55 4 * * *"
+    - cron: "/2 * * * *"
+  workflow_run:
+    workflows: 'Run tests on branch'
+    types: schedule
+    branches: testingCron
+    
 env:
-    TZ: 'Asia/Kolkata' 
+    TZ: "Asia/Kolkata" 
  
       # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
